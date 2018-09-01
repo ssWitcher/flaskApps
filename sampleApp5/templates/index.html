@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+</head>
+<body>
+	<h1> Enter the details below for puppy!!</h1>
+	<form method="POST">
+		{{ form.hidden_tag() }}
+		{{ form.breed.label }} {{ form.breed() }} <br>
+		{{ form.neutured.label }} {{ form.neutured() }} <br>
+		{{ form.mood.label }} {{ form.mood() }} <br>
+		{{ form.color_choice.label }} {{ form.color_choice() }} <br>
+		{{ form.feedback.label }} {{form.feedback()}} <br>
+		{{	form.submit() }}
+	</form>
+</body>
+</html>
