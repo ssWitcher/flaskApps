@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+	<ul> Here is the list of puppies
+		{% for pup in data%}
+			<li><b>{{ pup }}</b></li>
+		{% endfor %}
+	</ul>
+{% endblock %}
